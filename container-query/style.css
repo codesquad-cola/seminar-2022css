@@ -1,0 +1,115 @@
+* {
+  box-sizing: border-box;
+}
+
+.box {
+  display: inline-block;
+}
+
+button {
+  width: 50px;
+  height: 50px;
+  background-color: #fff;
+  border: 2px solid #2583ff;
+}
+
+.buttons {
+  position: absolute;
+  top: 20px;
+  right: 100px;
+  display: flex;
+  flex-direction: column;
+}
+
+.box2 .buttons {
+  right: 30px;
+}
+
+.buttons button {
+  margin-bottom: 10px;
+}
+
+button:active {
+  background-color: #eee;
+}
+
+.book-cover,
+.book-detail {
+  width: 50%;
+  padding: 10px;
+}
+
+.book-title {
+  font-size: 40px;
+}
+.book-desc {
+  font-size: 25px;
+}
+
+.book-cover img {
+  width: 100%;
+}
+
+.wrapper {
+  display: flex;
+}
+
+/* containing query */
+
+.book-info {
+  min-width: 400px;
+  max-width: 1200px;
+  width: 1200px;
+  border: 2px solid #444;
+  padding: 20px;
+  contain: layout;
+  container-type: inline-size;
+  container-name: box;
+}
+
+@container box (width <= 400px) {
+  .book-info {
+    height: 550px;
+  }
+  .book-cover {
+    position: relative;
+    height: 500px;
+  }
+
+  .book-cover img {
+    position: absolute;
+    width: 300px;
+    height: 100%;
+    height: auto;
+    opacity: 0.1;
+  }
+
+  .book-detail {
+    position: absolute;
+    top: 10px;
+    padding: 20px;
+    width: 80%;
+  }
+
+  .book-title {
+    font-size: 20px;
+  }
+
+  .book-desc {
+    font-size: 12px;
+  }
+}
+
+@container box (400px < width <= 1000px) {
+  .wrapper {
+    height: 500px;
+  }
+
+  .book-title {
+    font-size: 30px;
+  }
+
+  .book-desc {
+    font-size: 15px;
+  }
+}
