@@ -1,0 +1,13 @@
+@import "./reset.css";
+
+@scope (.box1) {
+  .depth-1 {
+    background-color: red;
+  }
+}
+
+@scope (.box1) to (.box2) {
+  .depth-2 {
+    background-color: blue;
+  }
+}
