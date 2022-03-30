@@ -1,0 +1,88 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  gap: 100px;
+  background-color: #eee;
+}
+button {
+  padding: 10px 10px;
+  margin: 0;
+  background-color: #fff;
+  border: 0;
+  cursor: pointer;
+}
+button:hover {
+  opacity: 0.5;
+}
+button[type="submit"] {
+  display: none;
+}
+.searchbar {
+  width: 300px;
+  height: 20px;
+  outline: 0;
+  border: 1px solid #444;
+  font-size: 8px;
+}
+form {
+  height: 400px;
+}
+.popup {
+  display: none;
+  width: 300px;
+  height: 200px;
+  justify-content: space-between;
+  align-items: flex-end;
+  border: 1px solid #444;
+  background-color: #fff;
+}
+.toggle {
+  position: relative;
+  width: 300px;
+}
+.lnb {
+  display: none;
+}
+.tab {
+  display: block;
+  width: 33%;
+  text-align: center;
+  border-bottom: 2px solid transparent;
+}
+.tab-wrapper {
+  display: flex;
+  width: 300px;
+}
+.lnb1:checked ~ .tab-wrapper .tab1,
+.lnb2:checked ~ .tab-wrapper .tab2,
+.lnb3:checked ~ .tab-wrapper .tab3 {
+  border-color: #2583ff;
+}
+.content {
+  display: none;
+}
+.buttons {
+  position: absolute;
+  width: 100%;
+  bottom: 100px;
+  display: flex;
+  justify-content: space-between;
+}
+.buttons button {
+  border: 2px solid #2583ff;
+  border-radius: 12px;
+}
+
+/* searchbar */
+form:focus-within .popup {
+  display: flex;
+}
+
+/* nav */
+.lnb1:checked ~ .lnb1-content,
+.lnb2:checked ~ .lnb2-content,
+.lnb3:checked ~ .lnb3-content {
+  display: block;
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <form action="">
+      <input
+        class="searchbar"
+        type="text"
+        placeholder="찾고 싶은 상품을 검색해보세요!"
+      />
+      <div class="popup">
+        <button type="button" class="left">전체삭제</button>
+        <button type="button" class="right">최근검색어끄기</button>
+        <button type="submit"></button>
+      </div>
+    </form>
+
+    <div class="toggle">
+      <input class="lnb lnb1" id="lnb1" type="radio" name="toggle" checked />
+      <input class="lnb lnb2" id="lnb2" type="radio" name="toggle" />
+      <input class="lnb lnb3" id="lnb3" type="radio" name="toggle" />
+      <div class="tab-wrapper">
+        <label class="tab tab1" for="lnb1">1</label>
+        <label class="tab tab2" for="lnb2">2</label>
+        <label class="tab tab3" for="lnb3">3</label>
+      </div>
+      <div class="content lnb1-content">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio
+        asperiores, a, repudiandae reprehenderit delectus est sit nostrum
+        accusantium ipsa possimus exercitationem assumenda. Necessitatibus totam
+        optio quidem beatae officiis quos ab?
+        <div class="buttons">
+          <button type="button">좋아요</button>
+          <button type="button">싫어요</button>
+        </div>
+      </div>
+      <div class="content lnb2-content">
+        Officiis commodi exercitationem in cumque ipsa doloribus sint impedit,
+        tenetur reiciendis alias voluptatem error accusamus perspiciatis
+        laudantium mollitia sequi odit.
+        <div class="buttons">
+          <button type="button">댓글달기</button>
+        </div>
+      </div>
+      <div class="content lnb3-content">
+        ipsam ducimus temporibus perferendis aliquid ad placeat nemo tempore
+        eaque sint ea sed totam esse. Praesentium quas sunt consectetur, ducimus
+        officia mollitia animi quod adipisci, blanditiis, ipsum ex inventore
+        autem culpa eligendi deleniti! Soluta repellat non.
+        <div class="buttons">
+          <button type="button">공유</button>
+          <button type="button">링크복사</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
