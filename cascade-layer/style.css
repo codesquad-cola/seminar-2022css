@@ -1,0 +1,32 @@
+@import url("./reset.css");
+@import url("./box4.css") layer(box4);
+
+@layer box1;
+@layer box2;
+@layer box3;
+
+/*  */
+@layer box1 {
+  #box1 {
+    background-color: yellow;
+  }
+}
+
+@layer box2 {
+  .box1 {
+    background-color: green;
+  }
+
+  .box2 {
+    background-color: aqua;
+  }
+}
+
+@layer box3 {
+  .box3 {
+    background-color: indigo;
+  }
+}
+
+@layer box4 {
+}
