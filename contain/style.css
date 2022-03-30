@@ -1,0 +1,6 @@
+.box {
+  width: 200px;
+  border: 2px solid #444;
+  contain: size paint;
+  padding: 20px 0;
+}
