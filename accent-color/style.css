@@ -1,0 +1,32 @@
+.ch {
+  zoom: 3;
+}
+
+.ch1 {
+  accent-color: red;
+}
+.ch2 {
+  accent-color: #74992e;
+}
+.ch3 {
+  accent-color: rgb(255, 255, 128);
+}
+.ch4 {
+  accent-color: hsl(250, 100%, 34%);
+}
+
+input[type="radio"] {
+  zoom: 2;
+  accent-color: rgb(255, 32, 162);
+}
+
+input[type="range"] {
+  zoom: 2;
+  accent-color: rgb(32, 255, 88);
+}
+
+progress {
+  margin-top: 20px;
+  zoom: 2;
+  accent-color: rgb(255, 229, 84);
+}
